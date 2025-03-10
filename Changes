@@ -1,2 +1,3 @@
 {{$NEXT}}
   - Implement LinkedIn API role
+  - Implement LinkedIn Restli2 protocol role

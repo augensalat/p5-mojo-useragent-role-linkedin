@@ -19,7 +19,7 @@ Mojo::UserAgent::Role::LinkedIn - A LinkedIn role for Mojo::UserAgent
   use Mojo::UserAgent;
 
   my $linkedin = Mojo::UserAgent
-    ->with_roles('+LinkedIn::API')
+    ->with_roles('+LinkedIn::API', '+LinkedIn::Restli2')
     ->new(
       access_token => '...',
       api_version  => '202502',
@@ -27,8 +27,11 @@ Mojo::UserAgent::Role::LinkedIn - A LinkedIn role for Mojo::UserAgent
 
 =head1 DESCRIPTION
 
-This module is a placeholder for the LinkedIn role for L<Mojo::UserAgent>.
+L<Mojo::UserAgent::Role::LinkedIn> extends L<Mojo::UserAgent> for the LinkedIn
+API with the help of Perl OO roles.
 
 =head1 SEE ALSO
 
-L<Mojo::UserAgent>, L<Mojo::UserAgent::Role::LinkedIn::API>
+L<Mojo::UserAgent>,
+L<Mojo::UserAgent::Role::LinkedIn::API>,
+L<Mojo::UserAgent::Role::LinkedIn::Restli2>
